@@ -54,9 +54,7 @@ console.log(myFruits);
 træk blomkål og spidskål ud af arrayen myVegetables
 og ind i en ny array der hedder myCabbage*/
 
-// din kode her...
-
-
+let myCabbage = myVegetables.slice(1, 3);
 
 console.log(myCabbage);
 
@@ -66,7 +64,7 @@ console.log(myCabbage);
  */
 
 
-// din kode her...
+
 
 
 
