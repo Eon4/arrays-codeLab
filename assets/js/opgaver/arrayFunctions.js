@@ -8,24 +8,24 @@ let myPartArray = ['partElement1', 'partElement2', 'PartElement3'];
 //.........................................................
 // opgave 1 tilføj element4 til enden myArray
 
-// din kode her...
+myArray.push('element4');
 console.log(myArray);
 
 // opgave 1 fjern element4 igen
-
-// din kode her...
+myArray.pop('element4');
 console.log(myArray);
+
 
 //.........................................................
 
 // opgave 2 tilføj element4 til starten myArray
 
-// din kode her...
+myArray.unshift('element4');
 console.log(myArray);
 
 // opgave 2 fjern element4 igen
 
-// din kode her...
+myArray.pop('element4');
 console.log(myArray);
 
 //.........................................................
@@ -38,16 +38,13 @@ let myVegetables = ['salat', 'blomkål', 'spidskål', 'agurk'];
  tilføj mandarin og fersken efter pære i myFruits
  */
 
-// din kode her...
-
-myFruits.splice(2, 0, "mandarin", "fersken");
+myFruits.splice(0, 1, "mandarin", "fersken");
 
 console.log(myFruits);
 
 // opgave 3 fjern mandarin og fersken igen
 
-// din kode her...
-myFruits.splice(2, 2);
+myFruits.splice(0, 2);
 
 console.log(myFruits);
 
@@ -120,3 +117,25 @@ let myNames = ['keld', 'søren', 'jens', 'tine', 'keld', 'ib', 'lene', 'keld', '
 //.........................................................
 
 
+
+//Fra tidligere gennemgang 
+// let myArray=[1,2,3,4,5,6,7,8,9];
+
+// let myArray=["bo","mads", "mikkel"];
+
+
+// console.log(myArray);
+// console.log(myArray[2]);
+
+
+// myArray.push("niklas","simon");
+
+// console.log(myArray[1]);
+
+
+// myArray.pop();
+// myArray.shift();
+// myArray.unshift("simon");
+
+
+// console.log(myArray);
