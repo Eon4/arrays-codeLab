@@ -1,3 +1,5 @@
+//Opgave 1 på hardmode 
+
 let myExtras = [];
 const myExtrasInput = document.getElementById('extraUdstyr');
 const myExtrasListElement = document.getElementById('extraList');
