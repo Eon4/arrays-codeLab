@@ -72,23 +72,19 @@ console.log(myYummies);
 
 //.........................................................
 
-/* opgave 6 sort()
+/* opgave 6 sort() - SORTERE EFTER ALFABET
  sorter array  myYummies fra opgave 5
  */
 
-
-// din kode her...
-
-
+myYummies.sort();
 
 console.log(myYummies);
 
-/* opgave 6 reverse()
+/* opgave 6 reverse() - NOTE: SORTERE EFTER ALFABET BAGLÆNS
  vend rækkefølgen på  array  myYummies fra opgave 6
  */
 
-
-// din kode her...
+ myYummies.reverse();
 
 console.log(myYummies);
 
@@ -101,15 +97,41 @@ console.log(myYummies);
  */
 let myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-// din kode her...
+let myNextNumbers = myNumbers.map((x) =>{
+    return x * 7;
+ });
 console.log(myNextNumbers);
+
+let myLastNumbers = myNumbers.map((x) =>{
+    return x * 12;
+ });
+
 console.log(myLastNumbers);
+
+//EKSTRA FOR FUN
+
+// let myNextNumbers = myNumbers.map((x) =>{
+//     return x < 7;
+//  });
+// console.log(myNextNumbers);
+
+// let myLastNumbers = myNumbers.map((x) =>{
+//     return x > 12;
+//  });
+
+// console.log(myLastNumbers);
 
 //.........................................................
 /* opgave 8 filter()
 skriv en kode der kan give os en ny array, udfra myNames, hvor navnet keld ikke findes i.
 */
 let myNames = ['keld', 'søren', 'jens', 'tine', 'keld', 'ib', 'lene', 'keld', 'frederikke', 'line', 'kurt'];
+
+let result = myNames.filter(checkNames);
+
+function checkNames() {
+    return myNames >= 'keld';
+}
 
 
 //.........................................................
