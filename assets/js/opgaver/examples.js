@@ -20,11 +20,19 @@ function addExtra() {
 
 function updateExtras() {
 
-    let myText = '<strong> Du har valgt:</strong>';
+    let myText = '<strong> Du har valgt:</strong><br><ul>';
+    // console.log('exstras array:' + 'myExstra');  kun for at tjekke efter fejl
 
     myExtras.map((items) => {
-        myText = myText + '<br>' + items;
+    console.log('item:' + items);
+    
+    
+    myText = myText +  '<li>' + items + '</li>';
+    console.log('text:' + myText);
+
     });
+
+    myText = myText +  '</ul>';
 
     myExtrasListElement.innerHTML = myText;
 
