@@ -64,7 +64,7 @@ console.log(myCabbage);
  */
 
 
-
+ let myYummies = myFruits.concat(myVegetables);
 
 
 
