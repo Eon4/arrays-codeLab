@@ -8,18 +8,25 @@ myExtrasInput.addEventListener("change", addExtra);
 
 
 function addExtra() {
-    /* din map kode her... */
+
+    myExtras.push(myExtrasInput.value);
+
+    console.log(myExtras);
+
+    updateExtras();
 }
 
 
 
 function updateExtras() {
 
+    let myText = '<strong> Du har valgt:</strong>';
 
+    myExtras.map((items) => {
+        myText = myText + '<br>' + items;
+    });
 
-
-    /* din map kode her... */
-
+    myExtrasListElement.innerHTML = myText;
 
 }
 
