@@ -121,18 +121,15 @@ console.log(myLastNumbers);
 
 // console.log(myLastNumbers);
 
-//.........................................................
+//......................................................... NOTE: OPGAVE ER IKKE HELT KORREKT
 /* opgave 8 filter()
 skriv en kode der kan give os en ny array, udfra myNames, hvor navnet keld ikke findes i.
 */
 let myNames = ['keld', 'søren', 'jens', 'tine', 'keld', 'ib', 'lene', 'keld', 'frederikke', 'line', 'kurt'];
 
-let result = myNames.filter(checkNames);
+let result = myNames.filter(word => word > 'keld');
 
-function checkNames() {
-    return myNames >= 'keld';
-}
-
+ console.log(result);
 
 //.........................................................
 
